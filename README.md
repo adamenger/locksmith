@@ -3,7 +3,7 @@ Locksmith
 
 Locksmith is a simple way to manage SSH keys across your infrastructure for your team. Using GitHub as a source of truth, Locksmith prints out your teams keys into stdout so you can pipe it to wherever you wish.
 
-Typically, you'll want to pipe these keys into an `~/.ssh/authorized_keys` file.
+Typically, you'll want to pipe these keys into `~/.ssh/authorized_keys`.
 
 ## Usage
 
