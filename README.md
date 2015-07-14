@@ -20,7 +20,7 @@ locksmith -access-token 12345 -team-id 12345 > ~/.ssh/authorized_keys
 
 Install locksmith and run it for your team:
 ```
-wget https://s3.amazonaws.com/adamenger/locksmith --directory-prefix /usr/local/bin/ && locksmith -access-token 12345 -team-id 12345 > ~/.ssh/authorized_keys
+sudo wget https://s3.amazonaws.com/adamenger/locksmith --directory-prefix /usr/local/bin/ && chmod +x /usr/local/bin/locksmith && locksmith -access-token 12345 -team-id 12345 > ~/.ssh/authorized_keys
 ```
 
 So you want to remove a user from your infrastructure? Just delete them from your team in GitHub and run locksmith again:
