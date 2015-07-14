@@ -16,7 +16,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAA...
 Piping your teams public keys to your service user account authorized_keys file:
 ```
 locksmith -access-token 12345 -team-id 12345 > ~/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAA...
 ```
 
 Install locksmith and run it for your team:
@@ -24,6 +23,12 @@ Install locksmith and run it for your team:
 wget https://s3.amazonaws.com/adamenger/locksmith --directory-prefix /usr/local/bin/ && locksmith -access-token 12345 -team-id 12345 > ~/.ssh/authorized_keys
 
 ```
+
+So you want to remove a user from your infrastructure? Just delete them from your team and run locksmith again:
+```
+locksmith -access-token 12345 -team-id 12345 > ~/.ssh/authorized_keys
+```
+
 
 ## Compiling
 
