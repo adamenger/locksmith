@@ -9,8 +9,8 @@ import (
 )
 
 var (
-	org          = flag.String("org", "", "GitHub Organization to list teams for")
 	access_token = flag.String("access-token", "", "Access key to use to authenticate with the GitHub API")
+	org          = flag.String("org", "", "GitHub Organization to list teams for")
 )
 
 func main() {

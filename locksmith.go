@@ -21,7 +21,13 @@ func main() {
 
 	// exit if access_token is not set
 	if *access_token == "" {
-		fmt.Println("Access token not set! Please supply the -access-token argument to access the GitHub API")
+		fmt.Println("ERROR: Access token not set! Please supply the -access-token argument to access the GitHub API")
+		os.Exit(1)
+	}
+
+	// exit if access_token is not set
+	if *team_id == 0 {
+		fmt.Println("ERROR: Team ID is not set! Please supply the -team-id argument to get your teams keys")
 		os.Exit(1)
 	}
 
