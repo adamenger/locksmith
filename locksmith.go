@@ -18,7 +18,6 @@ var (
 )
 
 func get_teams(client github.Client) {
-
 	// exit if org is not set
 	if *org == "" {
 		fmt.Println("ERROR: Organization not set! Please supply the -org argument to list teams for your organization.")
@@ -45,6 +44,7 @@ func get_keys(client github.Client) {
 		fmt.Println("ERROR: Team ID is not set! Please supply the -team-id argument to get your teams keys")
 		os.Exit(1)
 	}
+
 	// empty set of options
 	options := github.OrganizationListTeamMembersOptions{}
 
@@ -59,10 +59,6 @@ func get_keys(client github.Client) {
 		fmt.Println(string(contents))
 	}
 
-}
-
-func get_help() {
-	flag.Usage()
 }
 
 func main() {
@@ -90,7 +86,7 @@ func main() {
 	case *get == "teams":
 		get_teams(*client)
 	default:
-		get_help()
+		get_keys(*client)
 	}
 
 }
