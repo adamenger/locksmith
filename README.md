@@ -35,7 +35,7 @@ go build locksmith.go
 
 In order to get your teams keys, you need to know the Team ID. There's another script in this repo called `get-teams.go`. Build it with `go build get-teams.go` and use it to get the ID of your team.
 ```
-locksmith $> go run get-teams.go -access-token 12345 -org reverbdotcom
+locksmith $> ./get-teams -access-token 12345 -org reverbdotcom
 Getting teams for reverbdotcom
 Name: Team1, ID: 12345
 Name: Team2, ID: 123456
