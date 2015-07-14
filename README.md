@@ -24,3 +24,13 @@ Install locksmith and run it for your team:
 wget https://s3.amazonaws.com/adamenger/locksmith --directory-prefix /usr/local/bin/ && locksmith -access-token 12345 -team-id 12345 > ~/.ssh/authorized_keys
 
 ```
+
+## Compiling
+
+```
+go build locksmith.go
+```
+
+## Teams
+
+In order to get your teams keys, you need to know the Team ID. There's another script in this repo called `get-teams.go`. Build it with `go build get-teams.go` and use it to get the ID of your team.:wq
