@@ -33,4 +33,4 @@ go build locksmith.go
 
 ## Teams
 
-In order to get your teams keys, you need to know the Team ID. There's another script in this repo called `get-teams.go`. Build it with `go build get-teams.go` and use it to get the ID of your team.:wq
+In order to get your teams keys, you need to know the Team ID. There's another script in this repo called `get-teams.go`. Build it with `go build get-teams.go` and use it to get the ID of your team.
